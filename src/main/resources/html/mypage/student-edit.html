@@ -9,16 +9,27 @@
 	<link rel='stylesheet' href='/src/main/resources/css/quizlist/reset.css' type='text/css'>
 	<link rel='stylesheet' href='/src/main/resources/css/quizlist/fonts.css' type='text/css'>
 	<link rel='stylesheet' href='/src/main/resources/css/mypage/student-edit.css' type='text/css'>
+    <link rel='stylesheet' href='/src/main/resources/css/header.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/footer.css' type='text/css'>
 
 	<!-- js라이브러리 -->
 	<script src='/src/main/resources/js/quizlist/jquery-1.12.4.min.js'></script>
 	<script src='/src/main/resources/js/quizlist/jquery.easing.1.3.js'></script>
 	<script src='/src/main/resources/js/quizlist/jquery.touchSwipe.js'></script>
+    <script src='/src/main/resources/js/header.js'></script>
+    <script src='/src/main/resources/js/footer.js'></script>
 
 	<!-- 각 브라우저 CSS호환 -->
 	<script src='/src/main/resources/js/quizlist/prefixfree.min.js'></script>
 
 </head>
+
+<script>
+    $(function(){
+        $("#header").load("../header.html");
+        $("#footer").load("../footer.html");
+    });
+</script>
 
 <script>
     $(document).ready(function(){
@@ -122,7 +133,7 @@
                                         </div>
 
                                         <div class="header-button">
-                                            <a href="/src/main/resources/html/mypage/student-mypage.html" onclick="alert('수정이 완료되었습니다.')" style="outline: none;">
+                                            <a href="" onclick="alert('수정이 완료되었습니다.')" style="outline: none;">
                                                 <div class="header-btn">
                                                     업데이트
                                                 </div>
@@ -256,7 +267,7 @@
                                         
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group2">
                                         <label class="edit-label">
                                             이메일
                                         </label>

@@ -9,14 +9,25 @@
 	<link rel='stylesheet' href='/src/main/resources/css/quizlist/reset.css' type='text/css'>
 	<link rel='stylesheet' href='/src/main/resources/css/quizlist/fonts.css' type='text/css'>
 	<link rel='stylesheet' href='/src/main/resources/css/quizlist/problem.css' type='text/css'>
+    <link rel='stylesheet' href='/src/main/resources/css/header.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/footer.css' type='text/css'>
 
 	<!-- js라이브러리 -->
 	<script src='/src/main/resources/js/quizlist/jquery-1.12.4.min.js'></script>
 	<script src='/src/main/resources/js/quizlist/jquery.easing.1.3.js'></script>
 	<script src='/src/main/resources/js/quizlist/jquery.touchSwipe.js'></script>
+    <script src='/src/main/resources/js/header.js'></script>
+    <script src='/src/main/resources/js/footer.js'></script>
 
 	<!-- 각 브라우저 CSS호환 -->
 	<script src='/src/main/resources/js/quizlist/prefixfree.min.js'></script>
+
+    <script>
+        $(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+        });
+    </script>
 
 </head>
 <body>
@@ -26,13 +37,7 @@
 <div id="wrap">
 
     <header id="header">
-        <div class="wrap">
-            <div class="gap">
-                <div class="container">
-
-                </div>
-            </div>
-        </div>
+        
     </header>
 
     <main id="main">
@@ -42,216 +47,504 @@
                 <div class="gap">
                     <div class="container">
 
-                        <div class="title_wrap">
-                            <h2>문제 풀이</h2>
-                        </div>
+                        <div class="title_wrap"></div>
                         
                         <div class="content_wrap clearfix">
+                            <div class="content-right">
+                                
+                                <div class="righ-title">답안지</div>
+
+                                <div class="righ-main">01
+                                    <label for="one1" style="display: inline-block;">
+                                        <input type="radio" id="one1" name="01"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two1" style="display: inline-block;">
+                                        <input type="radio" id="two1" name="01" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three1" style="display: inline-block;">
+                                        <input type="radio" id="three1" name="01"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four1" style="display: inline-block;">
+                                        <input type="radio" id="four1" name="01"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five1" style="display: inline-block;">
+                                        <input type="radio" id="five1" name="01"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">02
+                                    <label for="one2" style="display: inline-block;">
+                                        <input type="radio" id="one2" name="02"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two2" style="display: inline-block;">
+                                        <input type="radio" id="two2" name="02" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three2" style="display: inline-block;">
+                                        <input type="radio" id="three2" name="02"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four2" style="display: inline-block;">
+                                        <input type="radio" id="four2" name="02"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five2" style="display: inline-block;">
+                                        <input type="radio" id="five2" name="02"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                
+                                <div class="righ-main">03
+                                    <label for="one3" style="display: inline-block;">
+                                        <input type="radio" id="one3" name="03"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two3" style="display: inline-block;">
+                                        <input type="radio" id="two3" name="03" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three3" style="display: inline-block;">
+                                        <input type="radio" id="three3" name="03"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four3" style="display: inline-block;">
+                                        <input type="radio" id="four3" name="03"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five3" style="display: inline-block;">
+                                        <input type="radio" id="five3" name="03"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">04
+                                    <label for="one4" style="display: inline-block;">
+                                        <input type="radio" id="one4" name="04"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two4" style="display: inline-block;">
+                                        <input type="radio" id="two4" name="04" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three4" style="display: inline-block;">
+                                        <input type="radio" id="three1" name="04"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four4" style="display: inline-block;">
+                                        <input type="radio" id="four4" name="04"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five4" style="display: inline-block;">
+                                        <input type="radio" id="five4" name="04"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">05
+                                    <label for="one5" style="display: inline-block;">
+                                        <input type="radio" id="one5" name="05"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two5" style="display: inline-block;">
+                                        <input type="radio" id="two5" name="05" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three5" style="display: inline-block;">
+                                        <input type="radio" id="three5" name="05"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four5" style="display: inline-block;">
+                                        <input type="radio" id="four5" name="05"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five5" style="display: inline-block;">
+                                        <input type="radio" id="five5" name="05"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">06
+                                    <label for="one6" style="display: inline-block;">
+                                        <input type="radio" id="one6" name="06"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two6" style="display: inline-block;">
+                                        <input type="radio" id="two6" name="06" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three6" style="display: inline-block;">
+                                        <input type="radio" id="three6" name="06"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four16 style="display: inline-block;">
+                                        <input type="radio" id="four6" name="06"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five6" style="display: inline-block;">
+                                        <input type="radio" id="five6" name="06"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">07
+                                    <label for="one7" style="display: inline-block;">
+                                        <input type="radio" id="one7" name="07"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two7" style="display: inline-block;">
+                                        <input type="radio" id="two7" name="07" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three7" style="display: inline-block;">
+                                        <input type="radio" id="three7" name="07"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four7" style="display: inline-block;">
+                                        <input type="radio" id="four7" name="07"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five7" style="display: inline-block;">
+                                        <input type="radio" id="five7" name="07"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">08
+                                    <label for="one8" style="display: inline-block;">
+                                        <input type="radio" id="one8" name="08"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two8" style="display: inline-block;">
+                                        <input type="radio" id="two8" name="08" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three8" style="display: inline-block;">
+                                        <input type="radio" id="three8" name="08"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four8" style="display: inline-block;">
+                                        <input type="radio" id="four8" name="08"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five8" style="display: inline-block;">
+                                        <input type="radio" id="five8" name="08"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">09
+                                    <label for="one9" style="display: inline-block;">
+                                        <input type="radio" id="one9" name="09"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two9" style="display: inline-block;">
+                                        <input type="radio" id="two9" name="09" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three9" style="display: inline-block;">
+                                        <input type="radio" id="three9" name="09"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four9" style="display: inline-block;">
+                                        <input type="radio" id="four9" name="09"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five9" style="display: inline-block;">
+                                        <input type="radio" id="five9" name="09"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">10
+                                    <label for="one10" style="display: inline-block;">
+                                        <input type="radio" id="one10" name="10"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two10" style="display: inline-block;">
+                                        <input type="radio" id="two10" name="10" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three10" style="display: inline-block;">
+                                        <input type="radio" id="three10" name="10"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four10" style="display: inline-block;">
+                                        <input type="radio" id="four10" name="10"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five10" style="display: inline-block;">
+                                        <input type="radio" id="five10" name="10"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">11
+                                    <label for="one11" style="display: inline-block;">
+                                        <input type="radio" id="one11" name="11"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two11" style="display: inline-block;">
+                                        <input type="radio" id="two11" name="11" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three11" style="display: inline-block;">
+                                        <input type="radio" id="three11" name="11"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four11" style="display: inline-block;">
+                                        <input type="radio" id="four11" name="11"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five11" style="display: inline-block;">
+                                        <input type="radio" id="five11" name="11"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">12
+                                    <label for="one12" style="display: inline-block;">
+                                        <input type="radio" id="one12" name="12"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two12" style="display: inline-block;">
+                                        <input type="radio" id="two12" name="12" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three12" style="display: inline-block;">
+                                        <input type="radio" id="three12" name="12"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four12" style="display: inline-block;">
+                                        <input type="radio" id="four12" name="12"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five12" style="display: inline-block;">
+                                        <input type="radio" id="five12" name="12"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">13
+                                    <label for="one13" style="display: inline-block;">
+                                        <input type="radio" id="one13" name="13"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two13" style="display: inline-block;">
+                                        <input type="radio" id="two13" name="13" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three13" style="display: inline-block;">
+                                        <input type="radio" id="three13" name="13"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four13" style="display: inline-block;">
+                                        <input type="radio" id="four13" name="13"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five13" style="display: inline-block;">
+                                        <input type="radio" id="five13" name="13"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">14
+                                    <label for="one14" style="display: inline-block;">
+                                        <input type="radio" id="one14" name="14"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two14" style="display: inline-block;">
+                                        <input type="radio" id="two14" name="14" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three14" style="display: inline-block;">
+                                        <input type="radio" id="three14" name="14"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four14" style="display: inline-block;">
+                                        <input type="radio" id="four14" name="14"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five14" style="display: inline-block;">
+                                        <input type="radio" id="five14" name="14"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">15
+                                    <label for="one15" style="display: inline-block;">
+                                        <input type="radio" id="one15" name="15"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two15" style="display: inline-block;">
+                                        <input type="radio" id="two15" name="15" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three15" style="display: inline-block;">
+                                        <input type="radio" id="three15" name="15"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four15" style="display: inline-block;">
+                                        <input type="radio" id="four15" name="15"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five15" style="display: inline-block;">
+                                        <input type="radio" id="five15" name="15"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">16
+                                    <label for="one16" style="display: inline-block;">
+                                        <input type="radio" id="one16" name="16"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two16" style="display: inline-block;">
+                                        <input type="radio" id="two16" name="16" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three16" style="display: inline-block;">
+                                        <input type="radio" id="three16" name="16"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four16" style="display: inline-block;">
+                                        <input type="radio" id="four16" name="16"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five16" style="display: inline-block;">
+                                        <input type="radio" id="five16" name="16"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">17
+                                    <label for="one17" style="display: inline-block;">
+                                        <input type="radio" id="one17" name="17"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two17" style="display: inline-block;">
+                                        <input type="radio" id="two17" name="17" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three17" style="display: inline-block;">
+                                        <input type="radio" id="three17" name="17"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four17" style="display: inline-block;">
+                                        <input type="radio" id="four17" name="17"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five17" style="display: inline-block;">
+                                        <input type="radio" id="five17" name="17"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">18
+                                    <label for="one18" style="display: inline-block;">
+                                        <input type="radio" id="one18" name="18"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two18" style="display: inline-block;">
+                                        <input type="radio" id="two18" name="18" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three18" style="display: inline-block;">
+                                        <input type="radio" id="three18" name="18"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four18" style="display: inline-block;">
+                                        <input type="radio" id="four18" name="18"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five18" style="display: inline-block;">
+                                        <input type="radio" id="five18" name="18"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">19
+                                    <label for="one19" style="display: inline-block;">
+                                        <input type="radio" id="one19" name="19"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two19" style="display: inline-block;">
+                                        <input type="radio" id="two19" name="19" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three19" style="display: inline-block;">
+                                        <input type="radio" id="three19" name="19"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four19" style="display: inline-block;">
+                                        <input type="radio" id="four19" name="19"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five19" style="display: inline-block;">
+                                        <input type="radio" id="five19" name="19"><span class="radio-span">&#9316;</span>
+                                    </label>  
+                                </div>
+                                <div class="righ-main">20
+                                    <label for="one20" style="display: inline-block;">
+                                        <input type="radio" id="one20" name="20"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two20" style="display: inline-block;">
+                                        <input type="radio" id="two20" name="20" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three20" style="display: inline-block;">
+                                        <input type="radio" id="three20" name="29"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four20" style="display: inline-block;">
+                                        <input type="radio" id="four20" name="20"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five20" style="display: inline-block;">
+                                        <input type="radio" id="five20" name="20"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">21
+                                    <label for="one21" style="display: inline-block;">
+                                        <input type="radio" id="one21" name="21"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two21" style="display: inline-block;">
+                                        <input type="radio" id="two21" name="21" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three21" style="display: inline-block;">
+                                        <input type="radio" id="three21" name="21"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four21" style="display: inline-block;">
+                                        <input type="radio" id="four21" name="21"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five21" style="display: inline-block;">
+                                        <input type="radio" id="five21" name="21"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">22
+                                    <label for="one22" style="display: inline-block;">
+                                        <input type="radio" id="one22" name="22"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two22" style="display: inline-block;">
+                                        <input type="radio" id="two22" name="22" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three22" style="display: inline-block;">
+                                        <input type="radio" id="three22" name="22"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four22" style="display: inline-block;">
+                                        <input type="radio" id="four22" name="22"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five22" style="display: inline-block;">
+                                        <input type="radio" id="five22" name="22"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">23
+                                    <label for="one23" style="display: inline-block;">
+                                        <input type="radio" id="one23" name="23"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two23" style="display: inline-block;">
+                                        <input type="radio" id="two23" name="23" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three23" style="display: inline-block;">
+                                        <input type="radio" id="three23" name="23"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four23" style="display: inline-block;">
+                                        <input type="radio" id="four23" name="23"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five23" style="display: inline-block;">
+                                        <input type="radio" id="five23" name="23"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">24
+                                    <label for="one24" style="display: inline-block;">
+                                        <input type="radio" id="one24" name="24"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two24" style="display: inline-block;">
+                                        <input type="radio" id="two24" name="24" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three24" style="display: inline-block;">
+                                        <input type="radio" id="three24" name="24"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four24" style="display: inline-block;">
+                                        <input type="radio" id="four24" name="24"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five24" style="display: inline-block;">
+                                        <input type="radio" id="five24" name="24"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">25
+                                    <label for="one25" style="display: inline-block;">
+                                        <input type="radio" id="one25" name="25"><span class="radio-span">&#9312;</span>
+                                    </label>
+                                    <label for="two25" style="display: inline-block;">
+                                        <input type="radio" id="two25" name="25" ><span class="radio-span">&#9313;</span>
+                                    </label>
+                                    <label for="three25" style="display: inline-block;">
+                                        <input type="radio" id="three25" name="25"><span class="radio-span">&#9314;</span>
+                                    </label> 
+                                    <label for="four25" style="display: inline-block;">
+                                        <input type="radio" id="four25" name="25"><span class="radio-span">&#9315;</span>
+                                    </label> 
+                                    <label for="five25" style="display: inline-block;">
+                                        <input type="radio" id="five25" name="25"><span class="radio-span">&#9316;</span>
+                                    </label> 
+                                </div>
+                                <div class="righ-main">26
+                                    <input type="text" name="" id="text">
+                                </div>
+                                <div class="righ-main">27
+                                    <input type="text" name="" id="text">
+                                </div>
+                                <div class="righ-main">28
+                                    <input type="text" name="" id="text">
+                                </div>
+                                <div class="righ-main">29
+                                    <input type="text" name="" id="text">
+                                </div>
+                                <div class="righ-main">30
+                                    <input type="text" name="" id="text">
+                                </div>
+                                <div class="righ-main">31
+                                    <input type="text" name="" id="text">
+                                </div>
+
+                                <div class="righ-btn">
+                                    <a class="btn-title" href="" >답안 제출</a>
+                                </div>
+
+                            </div>
+
                             <div class="content_body">
-                                <div class="content_padding">
-                                    <div class="subject-mark-1">수학</div>
-                                    <div class="title-mark-test">모의고사</div>
+                               
+                                    <div class="content_padding">
+                                        <div class="subject-mark-1">수학</div>
+                                        <div class="title-mark-test">모의고사</div>
 
-                                    <div class="content_title">
-                                        <h1>2017년도 고등학교 2학년 수학 모의고사</h1>
+                                        <div class="content_title">
+                                            <h1>2067년도 고등학교 2학년 수학 모의고사</h1>
+                                        </div>
+
+                                        <div class="content-tag">
+                                            <div class="class-mark-2">2학년</div>
+                                        </div>
+                                        <div class="content_tag-class">
+                                            과목 ㅣ 수학
+                                        </div>
+
                                     </div>
-
-                                    <div class="content-tag">
-                                        <div class="class-mark-2">2학년</div>
-                                    </div>
-                                    <div class="content_tag-class">
-                                        과목 ㅣ 수학
-                                    </div>
-
-                                    <div class="tag-line"></div>
-
-
 
                                     <div class="content_main">
                                         <div class="content_list">
-                                            1. 반지름의 길이가 6이고 넓이가 15π인 부채꼴의 중심각의
-                                            크기는? [2점]
+                                            <img src="/src/main/resources/img/quizlist/list1.png">
                                         </div>
                                         
+                                    </div>
+
+                                    <div class="content_main-bottom">
+                                        <a  class="main-buttom" href="">
+                                            <span>다음</span>
+                                        </a>
+                                            
                                     </div>
                                     
                                 </div>
-                                <div class="content_main-bottom">
-                                    <a  class="main-buttom" href="">
-                                        <span>다음</span>
-                                    </a>
-                                        
-                                </div>
+                                
+
                                 
                             </div>
-
-                            
-
-                            <div class="content-list-title">
-                                <h2>다른 문제 목록</h2>
-                            </div>
-                           
-                            <div class="content-bottom">
-                                <div class="content-bottom-info-box">
-
-                                    <div class="content-bottom-label ">
-                                        <div class="subject-mark-1">국어</div>
-                                        <div class="title-mark-test">모의고사</div>
-                                    </div>
-                                    <div class="content-bottom-heading">
-                                        <h1 class="content-bottom-title" >
-                                            2017년도 모의고사
-                                        </h1>
-                                    </div>
-                                    <div class="content-bottom-body">
-                                        <section class="content-bottom-list-info">
-                                            <div class="content-bottom-list-detail">
-                                                <p class="content-bottom_list-detail-body">
-                                                    <span>2017년도 1학년 모의고사 (국어)</span>
-                                                </p>
-                                            </div>
-                                        </section>
-
-                                        <section class="content-bottom-list-line"></section>
-
-                                        <div class="content-bottom-body-info-tag">
-                                            <div class="content-bottom_class-mark-2">2학년</div>
-                                            <div class="content-bottom_subject-detail-mark">국어</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="content-bottom-info-box">
-                                    <div class="content-bottom-info-box">
-
-                                        <div class="content-bottom-label ">
-                                            <div class="subject-mark-1">영어</div>
-                                            <div class="title-mark-test">모의고사</div>
-                                        </div>
-                                        <div class="content-bottom-heading">
-                                            <h1 class="content-bottom-title" >
-                                                2017년도 모의고사
-                                            </h1>
-                                        </div>
-                                        <div class="content-bottom-body">
-                                            <section class="content-bottom-list-info">
-                                                <div class="content-bottom-list-detail">
-                                                    <p class="content-bottom_list-detail-body">
-                                                        <span>2017년도 1학년 모의고사 (영어)</span>
-                                                    </p>
-                                                </div>
-                                            </section>
-    
-                                            <section class="content-bottom-list-line"></section>
-    
-                                            <div class="content-bottom-body-info-tag">
-                                                <div class="content-bottom_class-mark-2">2학년</div>
-                                                <div class="content-bottom_subject-detail-mark">영어</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content-bottom-info-box">
-                                    <div class="content-bottom-info-box">
-
-                                        <div class="content-bottom-label ">
-                                            <div class="subject-mark-2">과학탐구</div>
-                                            <div class="title-mark-test">모의고사</div>
-                                        </div>
-                                        <div class="content-bottom-heading">
-                                            <h1 class="content-bottom-title" >
-                                                2017년도 모의고사
-                                            </h1>
-                                        </div>
-                                        <div class="content-bottom-body">
-                                            <section class="content-bottom-list-info">
-                                                <div class="content-bottom-list-detail">
-                                                    <p class="content-bottom_list-detail-body">
-                                                        <span>2017년도 1학년 모의고사 (물리)</span>
-                                                    </p>
-                                                </div>
-                                            </section>
-    
-                                            <section class="content-bottom-list-line"></section>
-    
-                                            <div class="content-bottom-body-info-tag">
-                                                <div class="content-bottom_class-mark-2">2학년</div>
-                                                <div class="content-bottom_subject-detail-mark">물리</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content-bottom-info-box">
-                                    <div class="content-bottom-info-box">
-
-                                        <div class="content-bottom-label ">
-                                            <div class="subject-mark-2">사회탐구</div>
-                                            <div class="title-mark-test">모의고사</div>
-                                        </div>
-                                        <div class="content-bottom-heading">
-                                            <h1 class="content-bottom-title" >
-                                                2017년도 모의고사
-                                            </h1>
-                                        </div>
-                                        <div class="content-bottom-body">
-                                            <section class="content-bottom-list-info">
-                                                <div class="content-bottom-list-detail">
-                                                    <p class="content-bottom_list-detail-body">
-                                                        <span>2017년도 1학년 모의고사 (사회)</span>
-                                                    </p>
-                                                </div>
-                                            </section>
-    
-                                            <section class="content-bottom-list-line"></section>
-    
-                                            <div class="content-bottom-body-info-tag">
-                                                <div class="content-bottom_class-mark-2">2학년</div>
-                                                <div class="content-bottom_subject-detail-mark">사회</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content-bottom-info-box">
-                                    <div class="content-bottom-info-box">
-
-                                        <div class="content-bottom-label ">
-                                            <div class="subject-mark-2">제2외국어</div>
-                                            <div class="title-mark-test">모의고사</div>
-                                        </div>
-                                        <div class="content-bottom-heading">
-                                            <h1 class="content-bottom-title" >
-                                                2017년도 모의고사
-                                            </h1>
-                                        </div>
-                                        <div class="content-bottom-body">
-                                            <section class="content-bottom-list-info">
-                                                <div class="content-bottom-list-detail">
-                                                    <p class="content-bottom_list-detail-body">
-                                                        <span>2017년도 1학년 모의고사 (중국어)</span>
-                                                    </p>
-                                                </div>
-                                            </section>
-    
-                                            <section class="content-bottom-list-line"></section>
-    
-                                            <div class="content-bottom-body-info-tag">
-                                                <div class="content-bottom_class-mark-2">2학년</div>
-                                                <div class="content-bottom_subject-detail-mark">중국어</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            
                         </div>
-
-                        
+                            
 
                     </div>
                 </div>
@@ -261,13 +554,7 @@
     </main>
 
     <footer id="footer">
-        <div class="wrap">
-            <div class="gap">
-                <div class="container">
-
-                </div>
-            </div>
-        </div>
+        
     </footer>
 
 </div>
