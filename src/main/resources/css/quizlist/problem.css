@@ -16,17 +16,31 @@ body {  background-color: #F5F5F5;}
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
 
-#header { width: 100%; height: 64px; background-color: #000; }
+#header { width: 100%;}
 
-#main { width: 100%; height: 2287px;}
+#main { width: 100%;}
 #section { width: 100%; }
 
-.title_wrap { padding-top: 48px; padding-bottom: 20px; }
-.title_wrap h2 { font-size: 25px; line-height: 36px; display: inline-block; font-weight: 500;}
+.title_wrap { margin-bottom: 50px; }
 
 .content_wrap { width: 100%;}
-.content_wrap .content_body{width: 100%; height: 1100px; border: 1px solid #ddd; border-bottom: 0px; background-color: white; box-shadow: 0 2px 8px 0 rgba(0,0,0,.16); position:relative;}
-.content_wrap .content_body .content_padding {padding: 40px 60px;}
+.content_wrap .content-right{ float: right; width: 29%; height: 1100px; overflow: auto; background-color: #fff; border: 1px solid #ddd; box-sizing: border-box; }
+
+
+.content_wrap .content-right .righ-title{height: 50px; border-bottom: 1px solid #ddd; text-align: center; line-height: 50px; font-size: 15px; font-weight: 500; color: #3ba3c7;}
+
+.content_wrap .content-right  .righ-btn {height: 50px; border-bottom: 1px solid #ddd; text-align: center; line-height: 50px;}
+.content_wrap .content-right  .righ-btn .btn-title{outline: none; padding: 8px 20px; background-color: #3ba3c7; border: 1px solid 3ba3c7; color: #fff; font-size: 14px; font-weight: 400; border-radius: 4px; margin-left: 20px;}
+
+.content_wrap .content-right .righ-main { padding-left: 20px; height: 50px; border-bottom: 1px solid #ddd; line-height: 50px; font-size: 14px; font-weight: 400;}
+.content_wrap .content-right .righ-main input[type="radio"]{display: none;}
+.content_wrap .content-right .righ-main .radio-span{margin-left: 28px; font-size: 15px;}
+.content_wrap .content-right .righ-main input[type="radio"]:checked + span {color: #2099bb; font-weight: 500;}
+
+.content_wrap .content-right .righ-main input[type ="text"]{outline: none; margin-left: 20px; width: 220px; height: 35px; border: 1px solid #ddd; color: black; font-size: 14px; font-weight: 400; border-radius: 4px;}
+
+.content_wrap .content_body{width: 70%; height: 1100px; border: 1px solid #ddd; background-color: white; position:relative;}
+.content_wrap .content_body .content_padding {height: 150PX;  padding: 30px 60px; border-bottom: 1px solid #ddd;}
 
 .content_wrap .content_body .class-mark-1 {background-color: #fff9e0; border: 1px solid #fff9e0; color: #f28a05; font-size: 12px; font-weight: 500; width: 50px; height: 18px; display: inline-block; text-align : center; line-height: 18px;}
 .content_wrap .class-mark-2 {background-color: #dcedc8; border: 1px solid #dcedc8; color: #008000; font-size: 12px; font-weight: 500; width: 50px; height: 18px; display: inline-block; text-align : center; line-height: 18px;}
@@ -45,7 +59,7 @@ body {  background-color: #F5F5F5;}
 
 .content_wrap .content_body .content_main{margin-top: 30px;}
 
-.content_wrap .content_body .content_main-bottom {text-align: center; line-height: 50px; position:absolute; bottom:0px; border-top: 1px solid #ddd; margin-left: 60px; margin-right: 60px; width: 961px; height: 50px;}
+.content_wrap .content_body .content_main-bottom {text-align: center; line-height: 50px; position:absolute; bottom:0px; border-top: 1px solid #ddd; width: 100%; height: 50px;}
 .content_wrap .content_body .content_main-bottom .main-buttom {font-size: 15px; text-decoration: none; color: #212121; font-weight: 500; outline: none; }
 .content_wrap .content_body .content_main-bottom .main-buttom:hover {color: #2099bb;}
 
@@ -73,3 +87,5 @@ body {  background-color: #F5F5F5;}
 .content_wrap .content-bottom .content-bottom-body-info-tag .content-bottom_class-mark-2 {background-color: #dcedc8; border: 1px solid #009000; color: #008000; width: 53px; height: 21px; display: inline-block; text-align : center; line-height: 21px;}
 .content_wrap .content-bottom .content-bottom-body-info-tag .content-bottom_class-mark-3 {background-color: #ffdcdc; border: 1px solid #b24a4a; color: #b24a4a; width: 53px; height: 21px; display: inline-block; text-align : center; line-height: 21px;}
 .content_wrap .content-bottom .content-bottom-body-info-tag .content-bottom_subject-detail-mark {margin-left: 10px; background-color: #e8faff; border: 1px solid #369cc2; color: #369cc2; width: 53px; height: 21px; display: inline-block; text-align : center; line-height: 21px;}
+
+#footer { margin-top: 50px; width: 100%; }

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name='Viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0'>
+    <title>문제 등록</title>
+    
+	<!-- 스타일 -->
+	<link rel='stylesheet' href='/src/main/resources/css/quizlist/reset.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/quizlist/fonts.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/mypage/register.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/header.css' type='text/css'>
+	<link rel='stylesheet' href='/src/main/resources/css/footer.css' type='text/css'>
+    
+
+	<!-- js라이브러리 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='/src/main/resources/js/header.js'></script>
+    <script src='/src/main/resources/js/footer.js'></script>
+    
+	
+
+	<!-- 각 브라우저 CSS호환 -->
+	<script src='/src/main/resources/js/quizlist/prefixfree.min.js'></script>
+
+    <script>
+        $(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+        });
+    </script>
+
+    <script>
+        function setDisplay(){
+
+            if($('input:checkbox[id=math]').is(':checked')){
+                $('#mathId').show();
+            }else{
+                $('#mathId').hide();
+            }
+            if($('input:checkbox[id=science]').is(':checked')){
+                $('#scienceId').show();
+            }else{
+                $('#scienceId').hide();
+            }
+            if($('input:checkbox[id=society]').is(':checked')){
+                $('#societyId').show();
+            }else{
+                $('#societyId').hide();
+            }
+            if($('input:checkbox[id=language]').is(':checked')){
+                $('#languageId').show();
+            }else{
+                $('#languageId').hide();
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div id="wrap">
+
+    <header id="header">
+        
+    </header>
+
+    <main id="main">
+        
+        <section id="section">
+            <div class="wrap">
+                <div class="gap">
+
+                    
+
+                    <div class="container">
+                        
+
+                        <div class="title_wrap"></div>
+
+                        <div class="content_wrap clearfix">
+                            <div class="content">
+                                <div class="content-title">
+                                    문제 등록
+                                </div>
+
+                                <div class="register-body">
+
+                                    <div class="register-name">
+                                        <input type="text" class="register-input" name="register-input" id="register-input" Placeholder ="문제 제목 *">
+                                    </div>
+
+                                    <div class="register-detail-box">
+                                        <div class="register-list-title">
+                                            학년
+                                            <span class="star">*</span>
+                                        </div>
+                                        <div class="select-box">
+                                            <select class="register-select" name="" id="" >
+                                                <option value="">학년</option>
+                                                <option value="one">1학년</option>
+                                                <option value="two">2학년</option>
+                                                <option value="two">3학년</option>
+                                            </select>
+                                        </div> 
+                                        <div class="register-list-title">
+                                            카테고리
+                                            <span class="star">*</span>
+                                        </div>
+                                        <div class="select-box">
+                                            <select class="register-select" name="" id="" >
+                                                <option value="">카테고리</option>
+                                                <option value="one">모의고사</option>
+                                                <option value="two">기출문제</option>
+                                            </select>
+                                        </div>  
+
+                                        <div class="register-list-title">
+                                            과목 선택
+                                            <span class="star">*</span>
+                                        </div>
+
+                                        <div class="register-list">
+
+                                            <div class="register-list-menu">
+
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        <input type="checkbox" class="checkbox" id="korea" onchange="setDisplay()">
+
+                                                        <span style="margin-left: 10px;">국어</span>
+                                                    </label>
+    
+                                                </div>
+    
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        <input type="checkbox" class="checkbox" id="english" onchange="setDisplay()">
+
+                                                        <span style="margin-left: 10px;">영어</span>
+                                                    </label>
+                                                    
+                                                </div>
+    
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        <input type="checkbox" class="checkbox" id="math" onchange="setDisplay()">
+
+                                                        <span style="margin-left: 10px;">수학</span>
+                                                    </label>
+                                                    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="register-list-menu">
+                                                
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        <input type="checkbox" class="checkbox" id="science" onchange="setDisplay()">
+                                                        <span style="margin-left: 10px;">과탐</span>
+                                                    </label>
+    
+                                                </div>
+    
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        <input type="checkbox" class="checkbox" id="society" onchange="setDisplay()">
+                                                        <span style="margin-left: 10px;">사탐</span>
+                                                    </label>
+                                                    
+                                                </div>
+    
+                                                <div class="register-list-box">
+                                                    <label class="checkbox-partner">
+                                                        
+                                                        <input type="checkbox" class="checkbox" id="language" onchange="setDisplay()">
+
+                                                        <span style="margin-left: 10px;">제2외국어</span>
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+    
+                                            </div>
+                                            
+                                            <div class="register-lis-math" id="mathId" style="display:none">
+                                                <div class="register-list-title">
+                                                    과목 상세
+                                                    <span class="star">*</span>
+                                                </div>
+
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">수학1</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">수학2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">확률과 통계</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">미적분</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">기하와 벡터</span>
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="register-lis-science" id="scienceId" style="display:none">
+                                                <div class="register-list-title">
+                                                    과목 상세
+                                                    <span class="star">*</span>
+                                                </div>
+                                                
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">물리1</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">화학1</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">지구과학1</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">생명과학1</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">물리2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">화학2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">지구과학2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">생명과학2</span>
+                                                    </label>
+                                                </div>
+                                                
+                                                
+                                                
+                                            </div>
+
+                                            <div class="register-lis-society" id="societyId" style="display:none">
+                                                <div class="register-list-title">
+                                                    과목 상세
+                                                    <span class="star">*</span>
+                                                </div>
+                                                
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">생활과 윤리</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">윤리와 사상</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">한국 지리</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">세계지리</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">동아시아</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">세계사</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">경제</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">정치와 법</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">사회.문화</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="register-lis-language" id="languageId" style="display:none">
+                                                <div class="register-list-title">
+                                                    과목 상세
+                                                    <span class="star">*</span>
+                                                </div>
+                                                
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">독일어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">프랑스어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">스페인어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">중국어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">일본어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">러시아</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">아랍어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">베트남어</span>
+                                                    </label>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <label class="checkbox-detail">
+                                                        <input type="checkbox" class="checkbox" id="">
+
+                                                        <span style="margin-left: 10px;">한문</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="register-board">
+                                        <div class="register-list-title">
+                                            상세 설명
+                                            <span class="star">*</span>
+                                        </div>
+
+                                        <textarea  placeholder="내용을 입력해 주세요."></textarea>
+
+                                        <div class="register-list-title">
+                                            문제 등록
+                                            <span class="star">*</span>
+                                        </div>
+
+                                        <div class="img-box">
+                                            <div class="img-center-box">
+                                                <div class="default-img">
+                                                    <img class="btn-img" src="/src/main/resources/img/mypage/icon_btn_image.png">
+                                                    <div class="img-title">문제 등록</div>
+                                                    <div class="img-title2">문제 등록해 주세요.</div>
+                                                    <div class="img-help">·  이미지 파일만 등록 가능(.jpg, .jpeg, .png, .gif 등)</div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="register-footer">
+                                    <div class="fotter-btn">
+                                        <a href="" onclick="alert('취소 되었습니다.')" style="outline: none;"><button class="btn-no">취소</button></a>
+                                        
+                                        <a href="" onclick="alert('등록 되었습니다.')" style="outline: none;"><button class="btn-yes">등록</button></a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>   
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+</div>
+
+</body>
+</html>
