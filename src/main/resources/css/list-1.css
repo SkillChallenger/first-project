@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', Sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.gaia {
+    min-width: 1080px;
+    height: auto;
+    min-height: 70%;
+}
+
+.gaia:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.search-header {
+    margin: 48px 0 32px;
+}
+
+.main-title {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.search-zone {
+    display: flex;
+    float: right;
+}
+
+.search-select {
+    width: 140px !important;
+    min-width: 140px;
+    height: 42px;
+    padding: 8px 42px 8px 12px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #616161;
+    font-weight: 400;
+}
+
+.search-input {
+    width: 320px;
+    height: 42px;
+    margin: 0 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    padding: 8px 12px 8px 12px;
+}
+
+.search-button {
+    width: 66px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #2099bb;
+    color: #fff;
+    border: #2099bb;
+}
+
+.search-select:focus, .search-input:focus {
+	outline: none;
+    border-color: #3ba3c7;
+}
+
+.search-select:hover, .search-input:hover {
+	border-color: #3ba3c7;
+}
+
+.search-list {
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-header {
+    padding: 24px 24px 16px;
+}
+
+.result-header-wrap {
+    width: 100%;
+    display: inline-block;
+}
+
+.count-title {
+    height: 26px;
+    color: #212121;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.order-box {
+    padding: 8px 12px;
+    margin-top: 16px;
+    height: 34px;
+    background-color: #fafafa;
+}
+
+.order-radio-wrap {
+    display: inline-block;
+    height: 20px;
+}
+
+.order-radio {
+    display: none;
+}
+
+.order-text {
+    margin-right: 12px;
+    color: #616161;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.order-radio:checked + .order-text {
+    color: #3ba3c7;
+}
+
+.order-text:before {
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/check-inactive.png);
+    background-size: 10px 8px;
+    height: 8px;
+    width: 10px
+}
+
+.order-radio:checked + .order-text:before {
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/check-active.png);
+}
+
+.write-unit-body {
+    margin-top: 10px;
+    display: flex;
+}
+
+.write-unit-info {
+    width: 750px;
+}
+
+.result-list-wrap {
+    display: inline-block;
+    width: 100%;
+}
+
+.write-info-box {
+    position: relative;
+    padding: 24px 20px 24px 30px;
+    border-top: solid 1px #e0e0e0;
+    box-shadow: 0 1px 0 0 var(--gray-200);
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-mark {
+    display: inline-block;
+    padding: 2px 11px;
+    border: 1px solid;
+    border-color: #3ba3c7;
+    background-color: #3ba3c7;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.interest-button {
+    position: relative;
+    font-style: normal;
+    cursor: pointer;
+    text-align: left;
+}
+
+.interest-button:before {
+    content: "";
+    display: inline-block;
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.interest-button.interest-on:before {
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/btn-icon-like-on.png);
+}
+
+.interest-button.interest-off:before {
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/btn-icon-like-off.png);
+}
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.write-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.write-unit-body {
+    width: 100%;
+}
+
+.write-contents {
+    margin-top: 12px;
+    height: 40px;
+    color: #757575;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.write-info-tag {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.write-recruit-guide {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.write-unit-status {
+    margin: 10px 0 0 40px;
+    flex: 1;
+}
+
+.writer-status-box {
+    padding-bottom: 12px;
+    border-bottom: solid 1px #eee;
+}
+
+.writer-wrap {
+    margin-bottom: 6px;
+}
+
+.writer::before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    vertical-align: bottom;
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/icon-project-applicant.png);
+}
+
+.writer {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #616161;
+}
+
+.interest-status-box {
+    display: flex;
+    padding-top: 12px;
+}
+
+.status-wrap:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.write-tooltip {
+    display: inline-block;
+    margin-right: 4px;
+    position: relative;
+    font-style: normal;
+    cursor: pointer;
+    text-align: left;
+}
+
+.write-tooltip:before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    background-size: 14px 14px;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+}
+
+.comment-status:before {
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/post-icon-comment.png);
+}
+
+.like-status:before {
+    background-image: url(https://www.wishket.com/static/renewal/img/project/search/btn-icon-like-s-off.png);
+}
+
+.write-count {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.pagination {
+    display: block;
+    text-align: center;
+    border-top: solid 1px #e0e0e0;
+    line-height: 80px;
+}
+
+.pagination li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination li {
+    height: 100%;
+    margin-left: 4px;
+}
+
+.pagination li:first-child {
+    margin-left: 0;
+}
+
+.pagination li a {
+    cursor: pointer;
+}
+
+.pagination .page-link {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    min-width: 32px;
+    text-align: center;
+    padding: 0 8px;
+    font-weight: 500;
+    color: #616161;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+}
+
+.pagination .page-link.active {
+    color: #3ba3c7;
+    border-color: #bdbdbd;
+    border-radius: 2px;
+}
+
+.pagination li:first-child > .page-link {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='32' height='32' rx='2'%3E%3C/rect%3E%3Cpath stroke='%239E9E9E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.2' d='M19 10l-6 6 6 6'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    text-indent: -999999px;
+    background-position: center;
+}
+
+.pagination li:last-child > .page-link {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='32' height='32' rx='2'%3E%3C/rect%3E%3Cpath stroke='%239E9E9E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.2' d='M13 22l6-6-6-6'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    text-indent: -999999px;
+    background-position: center;
+}
